@@ -1,0 +1,23 @@
+1.影院列表：(cinema_list.json)
+ http://piao.163.com/m/cinema/list.html?app_id=1&mobileType=iPhone&ver=2.6&channel=appstore&deviceId=9E89CB6D-A62F-438C-8010-19278D46A8A6&apiVer=6&city=110000
+ 
+ 2.影院详情 (cinema_detail.json) POST请求
+ POST请求参数：cinema_id=1533&movie_id=
+ 
+ http://piao.163.com/m/cinema/schedule.html?app_id=1&mobileType=iPhone&ver=2.6&channel=appstore&deviceId=9E89CB6D-A62F-438C-8010-19278D46A8A6&apiVer=6&city=110000
+ 
+ 3.本地基础数据 (district_list.json)
+ http://piao.163.com/m/base_data.html?app_id=1&mobileType=iPhone&ver=2.6&channel=appstore&deviceId=9E89CB6D-A62F-438C-8010-19278D46A8A6&apiVer=6&city=110000
+ 
+ 4.电影详情 (movie163_detail.json) POST请求
+ POST请求参数：movie_id=43485
+ http://piao.163.com/m/movie/detail.html?app_id=1&mobileType=iPhone&ver=2.6&channel=appstore&deviceId=9E89CB6D-A62F-438C-8010-19278D46A8A6&apiVer=6&city=110000
+ 
+ 5.评论列表 (comment_list.json)  POST请求
+ POST请求参数：page_size=20&movie_id=43485
+ http://piao.163.com/m/movie/comm_list.html?app_id=1&mobileType=iPhone&ver=2.6&channel=appstore&deviceId=9E89CB6D-A62F-438C-8010-19278D46A8A6&apiVer=6&city=110000
+ 
+ 6.选座 (seat.json)
+ 
+
+ 

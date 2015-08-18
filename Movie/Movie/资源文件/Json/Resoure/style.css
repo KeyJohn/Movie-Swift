@@ -1,0 +1,52 @@
+/*
+@charset "utf-8";
+
+html{color:#000; background:#fff;}
+body{font:14px/1.5 Arial,Verdana,sans-serif;}
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,input,textarea,th,tr,td{margin:0;padding:0;}
+img{ border:none;}
+ul,ol,li{list-style:none;}
+
+
+
+.article img,.article video{max-width:250px;}
+.article{padding-left:10px; width:300px; margin:0 auto border:0px solid #ddd}
+.article .title h1{font-size:20px; font-weight:bold}
+.article .content{padding-top:5px; font-size:16px;}
+
+.img_boxs{position:relative; width:250px; margin:10px auto;}
+.img_boxs .em{display:block; position:absolute; bottom:-10px; right:-10px; width:21px; height:24px; background:url(zoom_icon.png) no-repeat}
+
+.video_boxs{position:relative; width:250px; margin:10px auto;}
+.video_boxs .em{display:block; position:absolute; top:50%; left:50%; width:50px; height:50px; margin:-25px; background:url(video_icon.png) no-repeat}
+
+*/
+
+
+@charset "utf-8";
+
+/*html{color:#000; background:#000;}*/
+body{font:14px Arial,Verdana,sans-serif;}
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,input,textarea,th,tr,td{margin:0;padding:0;}
+img{ border:none;}
+ul,ol,li{list-style:none;}
+
+
+
+.article img,.article video{max-width:250px;}
+.article{padding-left:10px; width:300px; margin:0 auto border:0px solid #ddd; }
+.article .title h1{padding-top:7px;font-size:22px; font-weight:bold}
+.article .content{padding-top:5px; font-size:16px;  line-height:150%; word-break: break-all; word-wrap: break-word;}
+.article .content:first-letter{font-size:18px;  line-height:150%;}
+.article .textGray{padding-left:0px;font-size:12px; color:#999999;  line-height:150%;}
+.photoNews{padding-left:10px; width:300px; margin:0 auto border:0px solid #ddd; line-height:150%}
+.photoNews .whiteTitle{font-size:16px; color:black; line-height:180%}
+.photoNews .whiteDesc{font-size:14px; color:black; line-height:150%}
+.photoNews .whiteContent{font-size:16px; color:black; line-height:150%}
+
+.img_boxs{position:relative; width:250px; margin:10px auto;}
+.img_boxs img{width:100%;height:auto;max-width:250px;}
+.img_boxs .em{display:block; position:absolute; bottom:0px; right:0px; width:20px; height:20px; background:url(zoom_icon.png) no-repeat; background-size:20px 20px;}
+
+.video_boxs{position:relative; width:250px; margin:10px auto;}
+.video_boxs a{display:block; width:250px; height:150px; background:url(mtime_news_video.png) no-repeat #000 center center;background-size:250px 150px;}
