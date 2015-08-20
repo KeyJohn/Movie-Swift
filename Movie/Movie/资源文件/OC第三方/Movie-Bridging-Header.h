@@ -3,4 +3,5 @@
 //
 
 #import "UIViewExt.h"
+#import "UIImageView+WebCache.h"
 

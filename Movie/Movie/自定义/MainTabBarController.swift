@@ -31,7 +31,7 @@ class MainTabBarController: UITabBarController {
         self.tabBar.backgroundImage = UIImage(named: "tab_bg_all.png")
         
         //打印子视图
-        print(self.tabBar.subviews)
+//        print(self.tabBar.subviews)
         
         //注意：UITabBarButton是一个私有的API
         //遍历tabbar中所有的子视图，并且移除按钮
