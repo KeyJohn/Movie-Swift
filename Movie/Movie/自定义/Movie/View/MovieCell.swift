@@ -20,6 +20,7 @@ class MovieCell: UITableViewCell {
     
     @IBOutlet weak var yearLabel: UILabel!
     
+    @IBOutlet weak var starView: StarView!
     
     
     override func layoutSubviews() {
@@ -31,7 +32,7 @@ class MovieCell: UITableViewCell {
         titleLabel.text = self.movie.title
         ratingLabel.text = "\(self.movie.average!)"
         yearLabel.text = "年份:\(self.movie.year!)"
-        
+        starView.rating = self.movie.average
     }
 
     override func awakeFromNib() {

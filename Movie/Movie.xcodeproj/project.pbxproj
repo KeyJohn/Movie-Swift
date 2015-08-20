@@ -231,6 +231,8 @@
 		65DB2C331B850AA6006607EB /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DB2C211B850AA6006607EB /* UIImageView+HighlightedWebCache.m */; };
 		65DB2C341B850AA6006607EB /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DB2C231B850AA6006607EB /* UIImageView+WebCache.m */; };
 		65DB2C351B850AA6006607EB /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DB2C251B850AA6006607EB /* UIView+WebCacheOperation.m */; };
+		65DB2C371B857401006607EB /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB2C361B857401006607EB /* StarView.swift */; };
+		65DB2C391B862B0F006607EB /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB2C381B862B0F006607EB /* NewsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -500,6 +502,8 @@
 		65DB2C231B850AA6006607EB /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		65DB2C241B850AA6006607EB /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		65DB2C251B850AA6006607EB /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		65DB2C361B857401006607EB /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+		65DB2C381B862B0F006607EB /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -989,6 +993,7 @@
 			children = (
 				6529B6351B84C4A10076A2C7 /* MovieCell.swift */,
 				6529B6371B84C4C00076A2C7 /* MovieCell.xib */,
+				65DB2C361B857401006607EB /* StarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1014,6 +1019,7 @@
 		65D4FF411B839C3500F777E1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				65DB2C381B862B0F006607EB /* NewsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1474,6 +1480,8 @@
 				65DB2C311B850AA6006607EB /* UIImage+MultiFormat.m in Sources */,
 				65DB2C351B850AA6006607EB /* UIView+WebCacheOperation.m in Sources */,
 				65DB2C291B850AA6006607EB /* SDWebImageCompat.m in Sources */,
+				65DB2C391B862B0F006607EB /* NewsModel.swift in Sources */,
+				65DB2C371B857401006607EB /* StarView.swift in Sources */,
 				65D4FF511B839D1900F777E1 /* TopViewController.swift in Sources */,
 				6529B63C1B84F0EB0076A2C7 /* Movie.swift in Sources */,
 			);

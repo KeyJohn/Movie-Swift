@@ -14,4 +14,5 @@ let kScreenHeight = UIScreen.mainScreen().bounds.size.height
 
 //MARK: -接口
 let us_box = "us_box"
+let news_list = "news_list"
 
