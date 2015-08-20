@@ -38,7 +38,7 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" id="EBw-Zp-Q0V">
+                    <view contentMode="scaleToFill" id="EBw-Zp-Q0V" customClass="StarView" customModule="Movie" customModuleProvider="target">
                         <rect key="frame" x="105" y="50" width="125" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
@@ -54,6 +54,7 @@
             <connections>
                 <outlet property="imgView" destination="nEk-OW-lJQ" id="Rw8-t0-scQ"/>
                 <outlet property="ratingLabel" destination="VA2-Is-H5X" id="KHX-cq-8fs"/>
+                <outlet property="starView" destination="EBw-Zp-Q0V" id="u1S-7i-kIE"/>
                 <outlet property="titleLabel" destination="kly-gN-LyV" id="TMn-2i-al6"/>
                 <outlet property="yearLabel" destination="tr3-ra-Uhe" id="k13-9c-wl4"/>
             </connections>
