@@ -233,6 +233,7 @@
 		65DB2C351B850AA6006607EB /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DB2C251B850AA6006607EB /* UIView+WebCacheOperation.m */; };
 		65DB2C371B857401006607EB /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB2C361B857401006607EB /* StarView.swift */; };
 		65DB2C391B862B0F006607EB /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB2C381B862B0F006607EB /* NewsModel.swift */; };
+		65EBCFFF1B878AD1004E885D /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EBCFFE1B878AD1004E885D /* NewsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -504,6 +505,7 @@
 		65DB2C251B850AA6006607EB /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		65DB2C361B857401006607EB /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 		65DB2C381B862B0F006607EB /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		65EBCFFE1B878AD1004E885D /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1027,6 +1029,7 @@
 		65D4FF421B839C3500F777E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				65EBCFFE1B878AD1004E885D /* NewsCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1474,6 +1477,7 @@
 				65DB2C2E1B850AA6006607EB /* SDWebImagePrefetcher.m in Sources */,
 				65D4FD801B839A1300F777E1 /* AppDelegate.swift in Sources */,
 				65DB2C281B850AA6006607EB /* SDImageCache.m in Sources */,
+				65EBCFFF1B878AD1004E885D /* NewsCell.swift in Sources */,
 				65DB2C2C1B850AA6006607EB /* SDWebImageDownloaderOperation.m in Sources */,
 				65D4FF491B839C6300F777E1 /* BaseViewController.swift in Sources */,
 				65DB2C261B850AA6006607EB /* MKAnnotationView+WebCache.m in Sources */,
