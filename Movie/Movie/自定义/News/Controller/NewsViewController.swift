@@ -9,6 +9,7 @@
 import UIKit
 
 class NewsViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+    
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -16,6 +17,8 @@ class NewsViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "新闻"
 
         self.tableView.rowHeight = 60
         self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "bg_main")!)
@@ -59,9 +62,11 @@ class NewsViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! NewsCell
         
-        cell.textLabel?.text = self.data[indexPath.row].title
+        let model = self.data[indexPath.row]
+        cell.newsModel = model
+        
         return cell
     }
     

@@ -14,6 +14,12 @@ class TopViewController: BaseViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let tableView = UITableView(frame: self.view.bounds, style: UITableViewStyle.Plain)
+        tableView.delegate = self
+        tableView.dataSource = self
+        self.view.addSubview(tableView)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,7 +28,7 @@ class TopViewController: BaseViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 20
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
