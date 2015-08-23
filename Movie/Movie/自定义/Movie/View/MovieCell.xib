@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -23,16 +22,6 @@
                         <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VA2-Is-H5X">
-                        <rect key="frame" x="268" y="50" width="42" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="42" id="Gug-oR-s8T"/>
-                            <constraint firstAttribute="height" constant="21" id="YBn-Tj-oAD"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="年份" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tr3-ra-Uhe">
                         <rect key="frame" x="117" y="87" width="143" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -47,16 +36,26 @@
                         <rect key="frame" x="0.0" y="118" width="320" height="1"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="1" id="d2g-9M-qqK"/>
+                            <constraint firstAttribute="height" constant="1" id="Rki-Ne-avh"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VA2-Is-H5X">
+                        <rect key="frame" x="289" y="52" width="23" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="NbF-Rg-hl8"/>
+                            <constraint firstAttribute="height" constant="21" id="pAm-MO-Ly2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="VA2-Is-H5X" firstAttribute="top" secondItem="fod-to-uGW" secondAttribute="topMargin" constant="42" id="3IY-cf-bu0"/>
-                    <constraint firstAttribute="bottom" secondItem="ei9-q4-3Mu" secondAttribute="bottom" constant="0.5" id="BGL-H1-sw4"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="VA2-Is-H5X" secondAttribute="trailing" constant="2" id="cS8-j0-hvh"/>
-                    <constraint firstAttribute="trailing" secondItem="ei9-q4-3Mu" secondAttribute="trailing" id="n2M-ti-8fa"/>
-                    <constraint firstItem="ei9-q4-3Mu" firstAttribute="leading" secondItem="fod-to-uGW" secondAttribute="leading" id="wdG-tb-mSO"/>
+                    <constraint firstItem="ei9-q4-3Mu" firstAttribute="leading" secondItem="fod-to-uGW" secondAttribute="leading" id="4Af-UJ-Ckz"/>
+                    <constraint firstItem="VA2-Is-H5X" firstAttribute="centerY" secondItem="fod-to-uGW" secondAttribute="centerY" constant="2.75" id="NIM-LO-E7Z"/>
+                    <constraint firstAttribute="trailing" secondItem="ei9-q4-3Mu" secondAttribute="trailing" id="QT2-rd-JiT"/>
+                    <constraint firstItem="VA2-Is-H5X" firstAttribute="centerX" secondItem="fod-to-uGW" secondAttribute="centerX" constant="140.5" id="Uoq-Hw-T9F"/>
+                    <constraint firstAttribute="bottom" secondItem="ei9-q4-3Mu" secondAttribute="bottom" constant="0.5" id="YMZ-2z-jxz"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

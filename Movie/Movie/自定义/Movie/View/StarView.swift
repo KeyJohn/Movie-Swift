@@ -63,7 +63,11 @@ class StarView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        yellowView.width *= CGFloat(self.rating) / 10
+        
+        if let rating = self.rating {
+            yellowView.width *= CGFloat(rating) / 10
+        }
+        
     }
     
     

@@ -22,9 +22,18 @@ class NewsViewController: BaseViewController, UITableViewDelegate, UITableViewDa
 
         self.tableView.rowHeight = 60
         self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "bg_main")!)
+        
+        
+        //设置头视图
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 160))
+        let imgView = UIImageView(frame: headerView.bounds)
+        imgView.tag = 2015
+        headerView.addSubview(imgView)
+        self.tableView.tableHeaderView = headerView
 
         //请求数据
         self._requestData()
+        
     }
     
     
@@ -47,6 +56,12 @@ class NewsViewController: BaseViewController, UITableViewDelegate, UITableViewDa
             data.append(model)
         }
         
+        //给头视图的图片赋值
+        let imgView = self.tableView.tableHeaderView?.viewWithTag(2015) as! UIImageView
+        let model = self.data[0]
+        let url = NSURL(string: model.image!)
+        imgView.sd_setImageWithURL(url)
+
         
     }
 
@@ -58,18 +73,35 @@ class NewsViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     
     //MARK: -UITableViewDataSource
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.data.count
+        return self.data.count - 1
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! NewsCell
         
-        let model = self.data[indexPath.row]
+        let model = self.data[indexPath.row + 1]
         cell.newsModel = model
         
         return cell
     }
     
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        //贯穿tableView的偏移量
+        let yOffset = self.tableView.contentOffset.y + 64
+        
+        if yOffset < 0 {
+            //往下滑拉伸
+            let imgView = self.tableView.tableHeaderView?.viewWithTag(2015) as! UIImageView
+            
+            //计算横向拉伸的比例
+            let width = kScreenWidth / 160 * (160 - yOffset)
+            
+            imgView.frame = CGRect(x: (kScreenWidth - width) / 2, y: yOffset, width: width, height: 160 - yOffset)
+            
+        }
+        
+    }
     
 
 }

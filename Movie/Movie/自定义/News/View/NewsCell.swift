@@ -24,7 +24,6 @@ class NewsCell: UITableViewCell {
             return _newsModel!
         }
         set {
-            
             _newsModel = newValue
             
             let urlString = self.newsModel.image
@@ -41,14 +40,15 @@ class NewsCell: UITableViewCell {
             case 0: //普通新闻
                 self.iconImg.hidden = true
                 summaryLabel.left = self.titleLabel.left
+                summaryLabel.transform = CGAffineTransformMakeTranslation(-25, 0)
             case 1: //图片新闻
                 self.iconImg.hidden = false
                 self.iconImg.image = UIImage(named: "sctpxw.png")
-                summaryLabel.left = self.iconImg.right + 2
+                summaryLabel.transform = CGAffineTransformIdentity
             case 2: //视频新闻
                 self.iconImg.hidden = false
                 self.iconImg.image = UIImage(named: "scspxw.png")
-                summaryLabel.left = self.iconImg.right + 2
+                summaryLabel.transform = CGAffineTransformIdentity
             default:
                 break
             }
