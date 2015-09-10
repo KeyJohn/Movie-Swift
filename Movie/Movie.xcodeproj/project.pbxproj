@@ -11,6 +11,7 @@
 		6529B6381B84C4C00076A2C7 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6529B6371B84C4C00076A2C7 /* MovieCell.xib */; };
 		6529B63A1B84DA7F0076A2C7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529B6391B84DA7F0076A2C7 /* DataService.swift */; };
 		6529B63C1B84F0EB0076A2C7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529B63B1B84F0EB0076A2C7 /* Movie.swift */; };
+		65570B611BA1ECF60098BA65 /* TopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65570B601BA1ECF60098BA65 /* TopCell.swift */; };
 		65D4FD801B839A1300F777E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D4FD7F1B839A1300F777E1 /* AppDelegate.swift */; };
 		65D4FD851B839A1300F777E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D4FD831B839A1300F777E1 /* Main.storyboard */; };
 		65D4FD871B839A1300F777E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65D4FD861B839A1300F777E1 /* Assets.xcassets */; };
@@ -258,6 +259,7 @@
 		6529B6371B84C4C00076A2C7 /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		6529B6391B84DA7F0076A2C7 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		6529B63B1B84F0EB0076A2C7 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		65570B601BA1ECF60098BA65 /* TopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopCell.swift; sourceTree = "<group>"; };
 		65D4FD7C1B839A1300F777E1 /* Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D4FD7F1B839A1300F777E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65D4FD841B839A1300F777E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -1062,6 +1064,7 @@
 		65D4FF461B839C3500F777E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				65570B601BA1ECF60098BA65 /* TopCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1465,6 +1468,7 @@
 				65D4FF601B83A57E00F777E1 /* TabbarItem.swift in Sources */,
 				65DB2C2A1B850AA6006607EB /* SDWebImageDecoder.m in Sources */,
 				65D4FF531B839D2500F777E1 /* CinemaViewController.swift in Sources */,
+				65570B611BA1ECF60098BA65 /* TopCell.swift in Sources */,
 				65DB2C2F1B850AA6006607EB /* UIButton+WebCache.m in Sources */,
 				65DB2C2D1B850AA6006607EB /* SDWebImageManager.m in Sources */,
 				65D4FF5E1B83A29E00F777E1 /* UIViewExt.m in Sources */,
