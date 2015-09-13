@@ -59,13 +59,17 @@ class StarView: UIView {
         
         //设置自己的背景颜色透明
         self.backgroundColor = UIColor.clearColor()
+        
+        
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         
+        yellowView.width = 0;
+        
         if let rating = self.rating {
-            yellowView.width *= CGFloat(rating) / 10
+            yellowView.width = CGFloat(rating) / 10 * grayView.width
         }
         
     }
