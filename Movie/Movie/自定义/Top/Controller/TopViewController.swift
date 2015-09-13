@@ -53,9 +53,12 @@ class TopViewController: BaseViewController, UICollectionViewDataSource, UIColle
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("TopCell", forIndexPath: indexPath)
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("TopCell", forIndexPath: indexPath) as! TopCell
         
         cell.backgroundColor = UIColor(red: CGFloat(arc4random()) % 10 * 0.1, green: CGFloat(arc4random()) % 10 * 0.1, blue: CGFloat(arc4random()) % 10 * 0.1, alpha: 1)
+        
+        
+        cell.movie = self.data[indexPath.row]
         return cell
     }
     
