@@ -30,6 +30,8 @@ class TopCell: UICollectionViewCell {
         starView.rating = self.movie.average
         ratingLabel.text = "\(self.movie.average!)"
         titleLabel.text = self.movie.title
+        
+        starView.setNeedsLayout()
 
     }
     
