@@ -85,7 +85,6 @@ class NewsViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
-    
     func scrollViewDidScroll(scrollView: UIScrollView) {
         //贯穿tableView的偏移量
         let yOffset = self.tableView.contentOffset.y + 64

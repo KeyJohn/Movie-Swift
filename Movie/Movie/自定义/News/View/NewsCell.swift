@@ -55,13 +55,7 @@ class NewsCell: UITableViewCell {
 
         }
     }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
         
-        
-    }
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
