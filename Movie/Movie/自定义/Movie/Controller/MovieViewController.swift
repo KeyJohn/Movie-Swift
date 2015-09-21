@@ -134,6 +134,7 @@ class MovieViewController: BaseViewController, UITableViewDelegate, UITableViewD
         var cell = tableView.dequeueReusableCellWithIdentifier(identifier) as? MovieCell
         if cell == nil {
             cell = NSBundle.mainBundle().loadNibNamed("MovieCell", owner: nil, options: nil).last as? MovieCell
+            cell?.selectionStyle = .None
         }
         
         cell!.movie = self.data[indexPath.row]
