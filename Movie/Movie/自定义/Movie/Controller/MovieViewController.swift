@@ -177,6 +177,7 @@ class MovieViewController: BaseViewController, UITableViewDelegate, UITableViewD
         
     }
     
+    
 }
 
 
