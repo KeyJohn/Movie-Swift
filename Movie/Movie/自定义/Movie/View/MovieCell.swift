@@ -35,6 +35,7 @@ class MovieCell: UITableViewCell {
         starView.rating = self.movie.average
     }
 
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
