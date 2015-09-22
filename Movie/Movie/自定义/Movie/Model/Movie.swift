@@ -13,7 +13,7 @@ struct Movie {
     var average: Float?
     var year: String?
     var title: String?
-}
+} 
 
 
 
