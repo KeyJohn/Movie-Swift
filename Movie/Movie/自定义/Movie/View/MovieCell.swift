@@ -23,6 +23,7 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var starView: StarView!
     
     
+    
     override func layoutSubviews() {
         
         if let dic = self.movie.images {
@@ -35,6 +36,7 @@ class MovieCell: UITableViewCell {
         starView.rating = self.movie.average
     }
 
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
