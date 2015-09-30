@@ -23,7 +23,6 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var starView: StarView!
     
     
-    
     override func layoutSubviews() {
         
         if let dic = self.movie.images {
