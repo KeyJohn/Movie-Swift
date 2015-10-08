@@ -102,5 +102,23 @@ class NewsViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let model = self.data[indexPath.row + 1]
+        
+        let type = model.type!;
+        
+        switch type {
+        case 0:
+            print("Txt")
+        case 1:
+            print("Img")
+        case 2:
+            print("Mov")
+        default:
+            print("Other")
+        }
+
+    }
+    
 
 }
