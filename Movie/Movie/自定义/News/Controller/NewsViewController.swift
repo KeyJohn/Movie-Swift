@@ -110,8 +110,10 @@ class NewsViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         switch type {
         case 0:
             print("Txt")
+            
         case 1:
             print("Img")
+            
         case 2:
             print("Mov")
         default:
