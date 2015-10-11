@@ -42,6 +42,7 @@ class StarView: UIView {
         yellowView = UIView(frame: grayView.bounds)
         yellowView.backgroundColor = UIColor(patternImage: yellowImg)
         self.addSubview(yellowView)
+        
         //测试: 一半金色星星覆盖
 //        yellowView.width /= 2
         

@@ -155,8 +155,6 @@ class MovieViewController: BaseViewController, UITableViewDelegate, UITableViewD
         
         for dic in array {
             let subject = dic.1["subject"]
-//            let title = subject["title"]
-//            print(title)
             
             //转换Model
             var movie = Movie()
