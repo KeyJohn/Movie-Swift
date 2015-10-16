@@ -46,6 +46,9 @@ class StarView: UIView {
         //测试: 一半金色星星覆盖
 //        yellowView.width /= 2
         
+        
+        
+        
         self.width = self.height * 5
         
         //计算缩放的倍数
